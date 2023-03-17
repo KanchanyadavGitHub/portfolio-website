@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0fd2f5d184.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <!-- <img src="img/images.png" class="logo"> -->
+                <p class="logo"><span>Port</span>folio</p>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web designer</p>
+                <h1>Hi, I'm <span>Kanchan</span><br>from Gorakhpur</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/h.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is kanchan yadav.Curuntly I'm pursuing 
+                       MCA at MADAN MOHAN MALAVIYA UNIVERSITY OF TECHNOLOGY, 
+                       GORAKHPUR.I am good in C++ language with data structures.
+                       I have a intrest in web development area.I love to create beutiful websites.I am self motivated person. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>HTML5</li>
+                            <li><span>CSS</span><br>SASS</li>
+                            <li><span>JAVA SCRIPT</span><br>BASIC JS</li>
+                            <li><span>BOOTSTRAP</span><br>BASIC LEVEL</li>
+                            <li><span>C++</span><br>Advanced</li>
+                            <li><span>SQL</span><br>intermediate level</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>fulstack web developmen training at Internshala</li>
+                            <li><span>Essuing Date:-19 Mar,2022<br></span>Certified from HACKERRANK for succesfully cleared the assesment for the skill SQL(Basic)(ID:A6B27C2D2E8F)</li>
+                            <li><span>Essuing date:-15/11/2022</span><br>Certified from TEACHNOOK (IIT BHUBANESHWAR)for succesfully WEB DEVELOPMENT COURSE completion(Certificate ID:2390197494)</li>
+                            
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2021</span><br>BCA from Ranveer Ranjanay Post Graduate College Amethi</li>
+                            <li><span>2021-pursuing</span><br>MCA from Madan Mohan Malaviya University Of Technology, Gorakhpur</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services------------- -->
+    <div id="services">
+        <div class="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Game Design</h2>
+                        <p> A video game designer imagines almost everything about a game, including its plots, characters, visual designs, and layouts. Designers meet with different teams and create a cohesive vision.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/web.jpg">
+                    <div class="layer">
+                        <h3>social media app</h3>
+                        <p>The App connect you to the talented people around the world. Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/uiux.jpg">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>This app will give you lots of relaxation when you are tired or bore.so hurryup..download it
+                            from play store</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/game.jpg">
+                    <div class="layer">
+                        <h3>Game application</h3>
+                        <p>here, this is the best game app i know you will definetly enjoy.Download it from play store
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/clock web.jpg">
+                    <div class="layer">
+                        <h3>Clock Website</h3>
+                        <p>here ,this is the best clock website i know you will definetly enjoy.Download it from play
+                            store </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -------------------contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titleC">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kanchu0797@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kanchan-yadav-b69058251"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.hackerrank.com/kanchanyadav"><i class="fa-brands fa-hackerrank"></i></a>
+
+                    </div>
+                    <a href="img/r.png" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>@Kanchan Yadav <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz88JwhiAI6Kld_3VIfDECrXmRI-0LCntL_wYU0vlBnwYD1us_r-ps94OvLSbPgirog/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                    
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
